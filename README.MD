@@ -65,25 +65,25 @@ That's it — no changes to the rest of your code.
 
 Every tool call, agent run, and LLM call is captured and surfaced in your Neatlogs dashboard automatically. Tag teammates and leave comments directly on any trace step — no context switching, no Slack threads, no copy-pasting outputs.
 
-https://github.com/dotslashsimran/neatlogs/raw/readme-update/assets/neatlogs-traces.mp4
+![Traces logged directly in your dashboard](assets/neatlogs-traces.gif)
 
 ### Step 5: Experiments — version control for your prompts
 
 Iterate on prompts without touching production. Neatlogs gives you version control for every prompt in your crew and a playground to test changes side by side — so you can improve agent behaviour safely before it goes anywhere near your live system.
 
-https://github.com/dotslashsimran/neatlogs/raw/readme-update/assets/neatlogs-experiments.mp4
+![Prompt versioning and playground in Neatlogs Experiments](assets/neatlogs-experiments.gif)
 
 ### Step 6: Code fixes directly in your IDE
 
 Get agent improvement suggestions and code fixes surfaced straight into Cursor, Codex, Claude Code, and other AI-native editors. Debug and improve your crew without leaving the tools you already work in.
 
-https://github.com/dotslashsimran/neatlogs/raw/readme-update/assets/neatlogs-codefixes.mp4
+![Code fix suggestions in Cursor and Claude Code](assets/neatlogs-codefixes.gif)
 
 ### Step 7: Human evaluations
 
 Bring your team in to review agent outputs, mark runs as correct or incorrect, and build evaluation datasets straight from production traces. Close the loop between what your agents produce and what they should produce.
 
-https://github.com/dotslashsimran/neatlogs/raw/readme-update/assets/neatlogs-evals.mp4
+![Human evaluation workflow in Neatlogs](assets/neatlogs-evals.gif)
 
 ---
 
