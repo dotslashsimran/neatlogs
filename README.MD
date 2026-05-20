@@ -65,25 +65,37 @@ That's it — no changes to the rest of your code.
 
 Every tool call, agent run, and LLM call is captured and surfaced in your Neatlogs dashboard automatically. Tag teammates and leave comments directly on any trace step — no context switching, no Slack threads, no copy-pasting outputs.
 
-![Traces logged directly in your dashboard](/assets/neatlogs-traces.mp4)
+<video width="100%" controls>
+  <source src="assets/neatlogs-traces.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
 
 ### Step 5: Experiments — version control for your prompts
 
 Iterate on prompts without touching production. Neatlogs gives you version control for every prompt in your crew and a playground to test changes side by side — so you can improve agent behaviour safely before it goes anywhere near your live system.
 
-![Prompt versioning and playground in Neatlogs Experiments](/assets/neatlogs-experiments.mp4)
+<video width="100%" controls>
+  <source src="assets/neatlogs-experiments.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
 
 ### Step 6: Code fixes directly in your IDE
 
 Get agent improvement suggestions and code fixes surfaced straight into Cursor, Codex, Claude Code, and other AI-native editors. Debug and improve your crew without leaving the tools you already work in.
 
-![Code fix suggestions in Cursor and Claude Code](/assets/neatlogs-codefixes.mp4)
+<video width="100%" controls>
+  <source src="assets/neatlogs-codefixes.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
 
 ### Step 7: Human evaluations
 
 Bring your team in to review agent outputs, mark runs as correct or incorrect, and build evaluation datasets straight from production traces. Close the loop between what your agents produce and what they should produce.
 
-![Human evaluation workflow in Neatlogs](/assets/neatlogs-evals.mp4)
+<video width="100%" controls>
+  <source src="assets/neatlogs-evals.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
 
 ---
 
