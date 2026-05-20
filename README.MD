@@ -26,23 +26,64 @@
 
 ![neatlogs](assets/hero.png)
 
-## Quickstart
+## Quick Setup
+
+### Step 1: Sign up and get your API key
+
+Go to [neatlogs.com](https://neatlogs.com/?utm_source=neatlogs-docs), create a project, and copy the API key from your dashboard.
+
+![Create a project and copy your API key](/assets/neatlogs-setup-1.gif)
+
+### Step 2: Install the SDK
 
 ```bash
 pip install neatlogs
 ```
 
+### Step 3: Add this before your code runs
+
+Call `neatlogs.init()` before importing any instrumented libraries so the auto-instrumentation patches land first.
+
 ```python
+import os
 import neatlogs
 
 neatlogs.init(
-    api_key="your-api-key",
+    api_key=os.environ["NEATLOGS_API_KEY"],
+    endpoint=os.environ["NEATLOGS_ENDPOINT"],
     workflow_name="my-agent",
-    instrumentations=["openai", "langchain"],
+    instrumentations=["openai", "langchain", "crewai"],
 )
+
+# Now import and run your code as normal
+from crewai import Crew, Agent, Task
 ```
 
-Every LLM call, tool invocation, and retrieval step is now captured. No decorators, no wrappers. Call `neatlogs.init()` before importing any instrumented library.
+That's it — no changes to the rest of your code.
+
+### Step 4: Traces logged directly in your dashboard
+
+Every tool call, agent run, and LLM call is captured and surfaced in your Neatlogs dashboard automatically. Tag teammates and leave comments directly on any trace step — no context switching, no Slack threads, no copy-pasting outputs.
+
+![Traces logged directly in your dashboard](/assets/neatlogs-traces.mp4)
+
+### Step 5: Experiments — version control for your prompts
+
+Iterate on prompts without touching production. Neatlogs gives you version control for every prompt in your crew and a playground to test changes side by side — so you can improve agent behaviour safely before it goes anywhere near your live system.
+
+![Prompt versioning and playground in Neatlogs Experiments](/assets/neatlogs-experiments.mp4)
+
+### Step 6: Code fixes directly in your IDE
+
+Get agent improvement suggestions and code fixes surfaced straight into Cursor, Codex, Claude Code, and other AI-native editors. Debug and improve your crew without leaving the tools you already work in.
+
+![Code fix suggestions in Cursor and Claude Code](/assets/neatlogs-codefixes.mp4)
+
+### Step 7: Human evaluations
+
+Bring your team in to review agent outputs, mark runs as correct or incorrect, and build evaluation datasets straight from production traces. Close the loop between what your agents produce and what they should produce.
+
+![Human evaluation workflow in Neatlogs](/assets/neatlogs-evals.mp4)
 
 ---
 
